@@ -14,18 +14,18 @@ class Solution {
             }
         }
         int n = nums.length;
-        int []res = new int[n];
+        // int []res = new int[n];
         for(int i=0;i<n;i++)
         {
             if(i%2==0)
             {
-                res[i]=q1.poll();
+                nums[i]=q1.poll();
             }      
             else
             {
-                res[i]=q2.poll();
+                nums[i]=q2.poll();
             }
         }
-        return res;
+        return nums;
     }
 }

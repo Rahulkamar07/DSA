@@ -13,9 +13,7 @@ class Solution {
                 q2.add(nums[i]);
             }
         }
-        int n = nums.length;
-        // int []res = new int[n];
-        for(int i=0;i<n;i++)
+        for(int i=0;i<nums.length;i++)
         {
             if(i%2==0)
             {

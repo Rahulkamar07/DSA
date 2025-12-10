@@ -21,12 +21,7 @@ class Solution {
                     {
                         res[i][k] = -1;
                     }
-                }
-                else
-                {
-                    // res[i][j]= matrix[i][j];
-                }
-                
+                }                
             }
         }
 

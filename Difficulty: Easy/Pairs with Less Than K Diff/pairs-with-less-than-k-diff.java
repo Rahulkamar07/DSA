@@ -1,0 +1,19 @@
+class Solution {
+    public static int countPairs(int arr[], int k) {
+        // code here
+        Arrays.sort(arr);
+        int i = 0, j = 1;
+        int count = 0;
+
+        while (j < arr.length) {
+            if (arr[j] - arr[i] < k) {
+                count += (j - i);
+                j++;
+            } else {
+                i++;
+                if (i == j) j++;
+            }
+        }
+        return count;
+    }
+}
